@@ -49,9 +49,8 @@ export const Hero: React.FC = () => {
       </div>
       <div className="w-1/2 relative flex justify-end">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FFD700] rounded-full blur-[150px] opacity-10"></div>
-       <img
-  src={`${import.meta.env.BASE_URL}1.jpg`}
-  alt="About Nihar"
+  <img src={`${import.meta.env.BASE_URL}${p}1.jpg`}
+alt="About Nihar"
   className="w-full h-[650px] object-cover rounded-xl"
 />
 
@@ -65,9 +64,8 @@ export const About: React.FC = () => {
     <section id="about" className="py-32 px-20 bg-[#0a0a0a]">
       <div className="flex gap-20 items-center">
         <div className="w-2/5 relative">
-          <img
-  
-  src={`${import.meta.env.BASE_URL}2.jpg`}
+  <img src={`${import.meta.env.BASE_URL}${p}2.jpg`}
+
   alt="About Nihar"
   className="w-full h-[650px] object-cover rounded-xl"
 />

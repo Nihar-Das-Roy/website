@@ -3,9 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/website/',   // 🔴 repo name
+  base: '/website/',   // 🔥 এটা অবশ্যই লাগবে
 })
-
 
 
 
