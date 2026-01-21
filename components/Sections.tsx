@@ -49,11 +49,12 @@ export const Hero: React.FC = () => {
       </div>
       <div className="w-1/2 relative flex justify-end">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#FFD700] rounded-full blur-[150px] opacity-10"></div>
-        <img 
-          src="2.jpg" 
-          alt="Nihar Das Roy" 
-          className="relative z-10 w-[550px] h-[750px] object-cover grayscale hover:grayscale-0 transition-all duration-700 rounded-2xl shadow-2xl border-b-8 border-r-8 border-[#FFD700]"
-        />
+       <img
+  src={`${import.meta.env.BASE_URL}1.jpg`}
+  alt="About Nihar"
+  className="w-full h-[650px] object-cover rounded-xl"
+/>
+
       </div>
     </section>
   );
@@ -64,11 +65,14 @@ export const About: React.FC = () => {
     <section id="about" className="py-32 px-20 bg-[#0a0a0a]">
       <div className="flex gap-20 items-center">
         <div className="w-2/5 relative">
-          <img 
-            src="1.jpg" 
-            alt="About Nihar" 
-            className="w-full h-[650px] object-cover rounded-xl"
-          />
+          <img
+  
+  src={`${import.meta.env.BASE_URL}2.jpg`}
+  alt="About Nihar"
+  className="w-full h-[650px] object-cover rounded-xl"
+/>
+
+
           <div className="absolute -bottom-10 -right-10 bg-[#FFD700] p-10 text-black rounded-xl shadow-2xl">
             <div className="text-6xl font-black">10+</div>
             <div className="text-sm font-bold tracking-widest uppercase mt-2">Years of Experience</div>
@@ -207,18 +211,22 @@ export const Portfolio: React.FC = () => {
         <h2 className="text-5xl font-black">Featured <span className="text-[#FFD700]">Projects</span></h2>
       </div>
       <div className="grid grid-cols-2 gap-10">
-   {[3, 4, 5, 6].map((p) => (
+ {[3, 4, 5, 6].map((p) => (
   <div
     key={p}
     className="group relative overflow-hidden rounded-xl aspect-[16/10]"
   >
     <img
-      src={`/${p}.jpg`}
-      alt="Project"
-      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-    />
+    src={`${import.meta.env.BASE_URL}${p}.jpg`}
+    className="absolute inset-0 w-full h-full object-cover"
+  />
   </div>
 ))}
+
+
+
+
+
 
 
       </div>
