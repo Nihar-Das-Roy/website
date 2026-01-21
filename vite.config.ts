@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/website/',   // 🔥 এটা অবশ্যই লাগবে
+  base: '/website/',
+  // 🔥 এটা অবশ্যই লাগবে
 })
 
 
